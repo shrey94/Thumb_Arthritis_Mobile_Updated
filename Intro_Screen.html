@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro Screen</title>
+  <link rel="stylesheet" href="font-6/css/all.css">
+  
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="mystyle.css">
+  <!-- <script src="main.js"></script> -->
+  <!-- <script src="main.js"></script> -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      background-color: #002664;
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    
+    #CNHC_Banner {
+      text-align: center;
+      max-width: 100%;
+    }
+    
+    #CNHC_Logo {
+      width: 28vh;
+      height: 12vh;
+      max-width: 150%;
+      border-radius: 10px;
+    }
+    
+    #app-title {
+      color: white;
+      font-size: 28px;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .hand-icon {
+      color: #f5f5f5;
+      font-size: 5rem;
+      margin-bottom: 40px;
+    }
+    
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    
+    .btn-container button {
+      padding: 16px;
+      font-size: 16px;
+      margin-bottom: 10px;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div id="CNHC_Banner">
+      <img id="CNHC_Logo" src="media/CNHC_Logo.png">
+    </div>
+    <div id="app-title">
+      Thumb Exercise App
+    </div>
+    <div class="hand-icon">
+      <!-- <br> -->
+      <i class="fa-solid fa-thumbs-up"></i>
+    </div>
+    <div id="User_info" class="btn-container">
+      <button id="New_User" class="btn btn-secondary btn-lg" style="background: #007DAC; color: white;" onclick='window.location.href="About_This_App.html"'><b>NEW USER</b></button>
+      <button id="Returning_User" class="btn btn-secondary btn-lg" style="background: white; color: #002664;"><b>RETURNING USER</b></button>
+      <button id="Return_Home" class="btn btn-secondary btn-lg" style="background: white; color: #002664; border: none;" onclick='window.location.href="About_This_App.html"'><b>ABOUT THIS APP</b></button>
+    </div>
+  </div>
+</body>
+</html>

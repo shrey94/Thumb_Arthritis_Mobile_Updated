@@ -1,0 +1,551 @@
+		body {
+			background-color: white;
+			font-family: sans-serif;
+			color: #353F4F;
+/*			margin: 0;*/
+/*			padding: 0;*/
+/*			font-family: 'Lato';*/
+			font-style: normal;
+			font-weight: 500;
+			font-size: 20px;
+/*			line-height: 133%;*/
+			/* or 53px */
+
+			
+		}
+
+#CNHC_Banner{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 50px;
+gap: 10px;
+margin:0 auto;
+/*position: absolute;*/
+width: 80%;
+height: 150px;
+/*left: 8px;*/
+/*top: 60px;*/
+color:#002664;
+background: #FFFFFF;
+border-radius: 15px;
+border: 2px solid black;
+
+}
+
+		#banner{
+			background-color: #002664;
+  	        color: white;
+/*  	        width:50%;*/
+/*  	        height:20%;*/
+  	        
+/*  	        padding: 80px;*/
+
+		}
+
+	
+
+		#Question_1{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		    flex-direction: column;
+			text-align: center;
+			letter-spacing: -0.005em;
+/*			border: 2px solid green;*/
+			padding :5px;
+			margin-top: 150px;
+			width: 100%;
+			height: 100%;
+		}
+
+
+		#Answers1{
+			margin-top: 150px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			width: 100%;
+/*			border: 5px solid red;*/
+			align-items: center;
+		}
+
+
+		#q1a1,#q1a2,#q1a3 {
+	    border: 3px solid black; 
+	    border-radius: 5px;
+	    font-size:2em; 
+	    margin-bottom: 30px; 
+	    margin-top: 30px;
+	    width: 70%;
+	    display: flex; 
+	    justify-content:space-between; 
+	    align-items: center;
+	    flex-direction: row;
+	    cursor:pointer;
+
+		}
+
+		
+
+		
+
+		
+
+		h1 {
+			font-size: 2em;
+			font-weight: 650;
+			display: inline-block;
+/*			padding:10px;*/
+/*			border:3px solid blue;*/
+			margin-left: 50px;
+			margin-right: 50px;
+
+
+		}
+
+		h3 {
+			font-size: 3em;
+			margin: 0.5em 0;
+		}
+
+		#Submit_Answer{
+			background: #797676;
+		    border-radius: 4px;
+		    padding: 16px 16px 16px 18px;
+		    width:70%;
+		    font-size: 1.5em;
+		    margin-top: 150px;
+		    cursor:pointer;
+
+		}
+
+		.selected{
+ 		background-color:#B6DEAC;
+		}
+
+		#Title_Preference{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		    flex-direction: column;
+			text-align: center;
+			letter-spacing: -0.005em;
+/*			border: 2px solid green;*/
+/*			padding :20px;*/
+/*			margin-top: 50px;*/
+			width: 100%;
+			height: 100%;
+/*			border: 1px solid red;*/
+/*			padding:10px;*/
+		}
+
+		#Preference_info{
+			margin-top: 150px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			width: 100%;
+/*			border: 5px solid red;*/
+			align-items: center;
+		}
+
+		#Checkbox_Preference{
+/*			border: 3px solid black; */
+/*		    border-radius: 5px;*/
+		    font-size:7em; 
+		    margin-bottom: 10px; 
+/*		    margin-top: 30px;*/
+		    width: 50%;
+		    height: 300px;
+
+/*		    display: flex; */
+/*		    justify-content:space-between; */
+		    align-items: center;
+/*		    flex-direction: center;*/
+		    cursor:pointer;
+		}
+
+		#App_instruction{
+/*			border: 3px solid black;*/
+			font-size:1.5em; 
+/*		    margin-bottom: 30px; */
+/*		    margin-top: 30px;*/
+		    width: 40%;
+/*		    height: 200px;*/
+
+/*		    display: flex; */
+/*		    justify-content:space-between; */
+		    align-items: center;
+/*		    flex-direction: center;*/
+		    cursor:pointer;
+
+		}
+
+		#Set_notifications{
+			background: #007DAC;
+		    border-radius: 4px;
+		    padding: 14px 14px 14px 14px;
+		    width:70%;
+		    font-size: 1.5em;
+		    margin-top: 150px;
+		    cursor:pointer;
+
+		}
+
+		.Orientation{
+			background-color: #002664;
+			font-family: sans-serif;
+			color: White;
+			height:100%;
+			border: 5px solid white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		    flex-direction: column;
+			text-align: center;
+/*			margin: 0;*/
+/*			padding: 0;*/
+/*			font-family: 'Lato';*/
+			
+/*			line-height: 133%;*/
+			/* or 53px */
+
+		}
+
+		
+
+		#HDTW_Text{
+			margin-top: 50px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			width: 100%;
+/*			border: 5px solid red;*/
+			align-items: center;
+			border-radius: 10px;
+		}
+
+		#Thumb_Icon{
+/*			border: 3px solid black; */
+/*		    border-radius: 5px;*/
+		    font-size:3.5em; 
+/*		    margin-bottom: 10px; */
+/*		    margin-top: 30px;*/
+		    width: 80%;
+		    height: 150px;
+
+/*		    display: flex; */
+/*		    justify-content:space-between; */
+		    align-items: center;
+/*		    flex-direction: center;*/
+		    cursor:pointer;
+		}
+
+		#Page_Scroller{
+/*			border: 3px solid red;*/
+			font-size:1em; 
+/*		    margin-bottom: 30px; */
+/*		    margin-top: 30px;*/
+		    width: 100%;
+/*		    height: 250px;*/
+
+		    display: flex; 
+		    justify-content:space-between; 
+		    align-items: center;
+/*		    flex-direction: center;*/
+/*		    cursor:pointer;*/
+/*		    padding:15px;*/
+
+		}
+
+		#button_nav_1{
+			cursor:pointer;
+		}
+
+		#Exercises_Text{
+			margin-top: 50px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			width: 100%;
+/*			border: 5px solid red;*/
+			align-items: center;
+			border-radius: 10px;
+		}
+
+		#Exercise_video{
+/*			border: 3px solid black; */
+/*		    border-radius: 5px;*/
+/*		    font-size:7em; */
+/*		    margin-bottom: 10px; */
+/*		    margin-top: 30px;*/
+		    width: 100%;
+		    height: 300px;
+
+/*		    display: flex; */
+/*		    justify-content:space-between; */
+		    align-items: center;
+/*		    flex-direction: center;*/
+		    cursor:pointer;
+		}
+
+		#exercise_difficult_selection{
+			border: 3px solid black; 
+	    border-radius: 5px;
+	    font-size:1.5em; 
+	    margin-bottom: 20px; 
+	    margin-top: 20px;
+	    width: 100%;
+	    display: flex; 
+	    justify-content:space-around; 
+	    align-items: center;
+	    flex-direction: row;
+	    cursor:pointer;
+		}
+
+		#exercise_easy_selection{
+		border: 3px solid black; 
+	    border-radius: 5px;
+	    font-size:1.5em; 
+	    margin-bottom: 20px; 
+	    margin-top: 20px;
+	    width: 100%;
+	    display: flex; 
+	    justify-content:space-around; 
+	    align-items: center;
+	    flex-direction: row;
+	    cursor:pointer;
+		}
+
+		.difficult{
+ 		background-color:#B6DEAC;
+		}
+
+		#Date_Time_Exercise{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		    flex-direction: column;
+			text-align: center;
+			letter-spacing: -0.005em;
+/*			border: 2px solid green;*/
+			padding :5px;
+			margin-top: 150px;
+			width: 100%;
+			height: 100%;
+		}
+
+		#date_banner{
+			width:90%;
+			height:25%;
+			align-items: center;
+  	        text-align: center;
+/*  	        position: absolute;*/
+  	        position: absolute;
+  	margin: auto;
+  	 top: 0;
+  right: 0;
+/*  bottom: 0;*/
+  left: 0;
+  background-color: #002664;;
+  	        color: white;
+  	        padding:10px;
+  	        font-size: 2em;
+			font-weight: 650;
+			border-radius: 20px;
+/*			padding-top: 50px;*/
+		}
+
+		#Exercises_List{
+			margin-top: 100px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			width: 100%;
+/*			border: 5px solid red;*/
+			align-items: center;
+		}
+
+		#E1,#E2,#E3,#E4 {
+/*	    border: 3px solid black; */
+/*	    border-radius: 5px;*/
+	    border-bottom: 1px solid black;
+	    text-align: center;
+/*	    border-color: red;*/
+	    font-size:25px; 
+/*	    margin-bottom: 10px; */
+/*	    margin-top: 10px;*/
+	    width: 90%;
+/*	    display: flex; */
+/*	    justify-content:space-between; */
+	    align-items: center;
+	    flex-direction: row;
+	    cursor:pointer;
+	    background-color: #FCD901;
+	    color:#002664;
+	    height:50px;
+
+		}
+
+		.complete{
+ 		background-color:#B6DEAC;
+ 		color:#FCD901;
+		}
+
+		#Pointer_Finger_Exercise,#Thumb_Ex_Exercise{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		    flex-direction: column;
+			text-align: center;
+			letter-spacing: -0.005em;
+/*			border: 2px solid green;*/
+/*			padding :20px;*/
+/*			margin-top: 50px;*/
+			width: 100%;
+			height: 100%;
+/*			border: 1px solid red;*/
+/*			padding:10px;*/
+		}
+
+		#Exercise_video_PFS,#Exercise_video_TEE{
+/*			border: 3px solid black; */
+/*		    border-radius: 5px;*/
+/*		    font-size:7em; */
+/*		    margin-bottom: 10px; */
+/*		    margin-top: 30px;*/
+		    width: 100%;
+/*		    height: 380px;*/
+		    font-size: 20px;
+
+/*		    display: flex; */
+/*		    justify-content:space-between; */
+		    align-items: center;
+		    text-align: center;
+/*		    flex-direction: center;*/
+		    cursor:pointer;
+		}
+
+		#Start_Exercise{
+			background: #007DAC;
+		    border-radius: 4px;
+		    padding: 16px 16px 16px 18px;
+		    width:90%;
+		    font-size: 1.5em;
+		    margin-top: 30px;
+		    cursor:pointer;
+		    color:white;
+
+		}
+
+		#pf_banner_intro,#Thumb_Ex_banner_intro{
+			width:100%;
+			height:3%;
+			align-items: center;
+  	        text-align: center;
+/*  	        position: absolute;*/
+  	        position: absolute;
+		  	margin: auto;
+		  	 top: 0;
+		  right: 0;
+		/*  bottom: 0;*/
+		  left: 0;
+  	background-color: #002664;
+  	        color: white;
+  	        padding:5px;
+/*  	        font-size: 2em;*/
+			font-weight: 650;
+			border-radius: 20px;
+/*			padding-top: 50px;*/
+		}
+
+		#counter{
+			font-weight: 700;
+			font-size:30px;
+		}
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 300px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  backdrop-filter: blur(15px);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  opacity: 1;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+#User_info{
+	background-color:white;
+
+
+
+
+/*  left: 0;*/
+/*  top: 0;*/
+  width: 100%; /* Full width */
+/*  height: 100%; */
+  margin:auto;
+  text-align: center;
+  padding:30px;
+  border-radius: 20px;
+  /* Full height */
+
+
+/*  backdrop-filter: blur(15px);*/
+}
+
+.column {
+  float: left;
+  width: 50%;
+/*  padding: 5px;*/
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+		
+
