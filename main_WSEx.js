@@ -6,7 +6,7 @@ console.log(document.getElementById('Exercise_video_TEE').childNodes[1]);
 
 function incrementSecondsRev() {
   seconds_rev =seconds_rev - 1;
-  el.innerText =  "Timer: " + seconds_rev;
+  el.innerText =  "Reps: " + seconds_rev;
   // console.log(seconds);
   if (seconds_rev <1){
     // window.location.href = 'Completion_PFE_Page.html';

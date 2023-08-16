@@ -118,7 +118,7 @@ function Exercise_option(id){
     else if (exercise_difficulty_option[0]=='exercise_difficult_selection'){
         page_name_array = (page_name.split('/')).at(-1).split('_').at(-1).split('.');
         if (page_name_array[0]=='PFE'){
-            window.location.href = 'Pointer_Finger_Exercise_Difficult.html'
+            window.location.href = 'Pointer_Finger_Exercise_Difficult_Intro.html'
         }
 
     }
