@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Returning User Options</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-6/css/all.css">
+    
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+
+<div id= 'date_banner'>
+      <p id = "Date_Info"></p>
+
+      <!-- <div style="font-size:20px;font-weight: 200;margin-top: 30px;"> Total Time : 15 minutes </div> -->
+</div>
+    <br>
+    <!-- <br>
+    <br> -->
+<div class = container>
+    <br>
+    <br>
+    <br>
+    <br>
+<!-- <h1>Select Your Options</h1> -->
+
+    <!-- <form id="Exercise_List">
+        <label>Select multiple options:</label>
+        <br>
+        <div>
+        <input type="checkbox" name="options" value="option1" id="ex1" >Pointer finger slides</div><br>
+        <div>
+        <input type="checkbox" name="options" value="option2" id="ex2">“C”-Position hold</div><br>
+        <div>
+        <input type="checkbox" name="options" value="option3" id="ex3">Thumb Extension</div><br>
+        <div>
+        <input type="checkbox" name="options" value="option4"
+        id="ex4">Wrist Strengthening</div><br>
+        
+        <input type="button" value="Submit" onclick="getSelectedOptions()">
+    </form> -->
+    <p style='font-size:30px;color:black;text-align: center;'><b>Today's Exercises</b></p>
+              <br>
+    <!-- <br> -->
+    <!-- <br> -->
+    <div id="form_exercises">
+        <form id="optionForm">
+        <div class="option-container">
+            <input type="checkbox" name="options" value="Pointer Finger Slides" onchange="updateDivColor(this)">
+        
+            <label>Pointer Finger Slides</label>
+        </div>
+        <div class="option-container">
+            <input type="checkbox" name="options" value="C-Position hold" onchange="updateDivColor(this)">
+        
+            <label>"C"-Position hold</label>
+        </div>
+        <div class="option-container">
+            <input type="checkbox" name="options" value="Thumb Extension" onchange="updateDivColor(this)">
+        
+            <label>Thumb Extension</label>
+        </div>
+        <div class="option-container">
+            <input type="checkbox" name="options" value="Wrist Strenghtening" onchange="updateDivColor(this)">
+        
+            <label>Wrist Strenghtening</label>
+        </div>
+        
+        
+        <br>
+        <input type="button" value="Start Exercise" class="btn btn-secondary btn-lg" id = 'Start_Exercise' style='text-align: center;margin-left:16px;' onclick="getSelectedOptions()">
+        </form>
+    </div>
+</div>
+
+<p id = 'Display_Ex' style='display:none'>You have selected to do the following Exercises:</p>
+<ul id="selectedOptionsList"></ul>
+
+<script>
+function getSelectedOptions() {
+    const selectedOptionsList = document.getElementById("selectedOptionsList");
+    selectedOptionsList.innerHTML = ""; // Clear previous selections
+
+    const checkboxes = document.getElementsByName("options");
+
+    for (let i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+            const listItem = document.createElement("li");
+            listItem.textContent = checkboxes[i].value;
+            selectedOptionsList.appendChild(listItem);
+        }
+    }
+
+    $("#Display_Ex").show();
+}
+
+function updateDivColor(checkbox) {
+    const optionContainer = checkbox.parentNode;
+    if (checkbox.checked) {
+        optionContainer.classList.add("exerciseselected");
+    } else {
+        optionContainer.classList.remove("exerciseselected");
+    }
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src= "main_3.js"></script> 
+
+</body>
+</html>

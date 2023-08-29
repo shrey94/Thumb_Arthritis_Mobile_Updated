@@ -6,6 +6,11 @@ const d = new Date();
 
 document.getElementById("Date_Info").innerHTML = monthNames[d.getMonth()] + '&nbsp' + d.getDate()+ '<br>'+ 'EXERCISES';
 
+var count_ec1 = 0;
+var count_ec2 = 0;
+var count_ec3 = 0;
+var count_ec4 = 0;
+
 function exerciseselectioncomplete1(id){
     count_ec1 = count_ec1+1
     var div_select = document.getElementById(id);
