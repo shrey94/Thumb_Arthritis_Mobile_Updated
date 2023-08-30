@@ -38,7 +38,7 @@ document.getElementById('Submit_Answer').addEventListener('click',function(){
     
     var selectedEl = document.querySelector(".selected");
     if(selectedEl){
-        alert("You have selected " + selectedEl.innerText); 
+        //alert("You have selected " + selectedEl.innerText); 
         // document.body.style.backgroundColor = 'blue';
     }
     else{
@@ -110,7 +110,7 @@ function Exercise_option(id){
             window.location.href = 'Pointer_Finger_Exercise_Easy.html'
         }
         else{
-            window.location.href = 'Wrist_Strengthening_Exercise_1.html'
+            window.location.href = 'C-Position-Hold-Easy-Intro.html'
 
         }
 
@@ -119,6 +119,10 @@ function Exercise_option(id){
         page_name_array = (page_name.split('/')).at(-1).split('_').at(-1).split('.');
         if (page_name_array[0]=='PFE'){
             window.location.href = 'Pointer_Finger_Exercise_Difficult_Intro.html'
+        }
+        else{
+            window.location.href = 'C-Position-Hold-Top-Intro.html'
+
         }
 
     }

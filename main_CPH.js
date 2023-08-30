@@ -13,6 +13,10 @@ function incrementSecondsRev() {
     var page_name_array = ((window.location.href).split('/'));
     var page_index = (page_name_array[page_name_array.length-1]);
     console.log(page_index);
+    if (page_index =='C-Position-Hold-Easy.html'){
+
+      window.location.href = 'Completion_CPH_Beginner_Page.html';
+    }
     if (page_index =='C-Position-Hold-Top.html'){
 
       window.location.href = 'Completion_CPHT_Page.html';
