@@ -5,14 +5,32 @@ console.log(document.getElementById('Exercise_video_TEE').childNodes[1]);
 // var ispaused = false;
 
 function incrementSecondsRev() {
+  var page_name_array = ((window.location.href).split('/'));
+  var page_index = (page_name_array[page_name_array.length-1]);
+  // console.log(page_index);
   seconds_rev =seconds_rev - 1;
-  el.innerText =  "Timer: " + seconds_rev;
+
+  if (page_index =='Pointer_Finger_Exercise_Difficult.html'){
+      // console.log(page_index);
+      el.innerText =  "Reps: " + seconds_rev;
+    }
+
+  else if(page_index =='Thumb_Extension_Exercise.html'){
+    el.innerText =  "Reps: " + seconds_rev;
+
+  }
+  else{
+    el.innerText =  "Timer: " + seconds_rev;
+  }
+
+  // console.log('hello');
+  
   // console.log(seconds);
   if (seconds_rev <1){
     // window.location.href = 'Completion_PFE_Page.html';
-    var page_name_array = ((window.location.href).split('/'));
-    var page_index = (page_name_array[page_name_array.length-1]);
-    console.log(page_index);
+    // var page_name_array = ((window.location.href).split('/'));
+    // var page_index = (page_name_array[page_name_array.length-1]);
+    // console.log(page_index);
     if (page_index =='Thumb_Extension_Exercise.html'){
 
       window.location.href = 'Completion_TEE_Page.html';
@@ -41,20 +59,20 @@ function incrementSecondsRev() {
     clearInterval(timer_rev);
   }
 }
-var timer_rev = setInterval(incrementSecondsRev, 1000);
+var timer_rev = setInterval(incrementSecondsRev, 1300);
 
 // if (ispaused==false){
 //     setInterval(incrementSeconds, 2500);
 // }
 //MODAL HIDE SHOW
 var wrist_image = document.getElementById('Exercise_video_TEE').childNodes[1];
-console.log(wrist_image);
+// console.log(wrist_image);
 
 
 
 
 var modal = document.getElementById("myModal");
-console.log(modal);
+// console.log(modal);
 // Get the button that opens the modal
 var PB = document.getElementById("Pause_Button");
 
@@ -100,7 +118,7 @@ PB.onclick = function(){
 span.onclick = function() {
   modal.style.display = "none";
   // pfe_video.load();
-  timer_rev = setInterval(incrementSecondsRev, 1000);
+  timer_rev = setInterval(incrementSecondsRev, 1300);
   console.log(event);
 
   // ispaused=false;
@@ -110,7 +128,7 @@ span.onclick = function() {
 cont_exercise.onclick = function() {
   modal.style.display = "none";
   // pfe_video.load();
-  timer_rev = setInterval(incrementSecondsRev, 1000);
+  timer_rev = setInterval(incrementSecondsRev, 1300);
   console.log(event);
 
   // ispaused=false;
@@ -122,7 +140,7 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
     // pfe_video.load();
-    timer_rev = setInterval(incrementSeconds, 1000);
+    timer_rev = setInterval(incrementSeconds, 1300);
     // ispaused=false;
     // console.log(seconds);
   }
