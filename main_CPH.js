@@ -13,19 +13,51 @@ function incrementSecondsRev() {
     var page_name_array = ((window.location.href).split('/'));
     var page_index = (page_name_array[page_name_array.length-1]);
     console.log(page_index);
-    if (page_index =='C-Position-Hold-Easy.html'){
+    if (page_index =='C-Position-Hold-Easy1.html'){
+
+      window.location.href = 'C-Position-Hold-Easy2.html';
+    }
+    if (page_index =='C-Position-Hold-Easy2.html'){
+
+      window.location.href = 'C-Position-Hold-Easy3.html';
+    }
+    if (page_index =='C-Position-Hold-Easy3.html'){
 
       window.location.href = 'Completion_CPH_Beginner_Page.html';
     }
-    if (page_index =='C-Position-Hold-Top.html'){
+    if (page_index =='C-Position-Hold-Top1.html'){
+
+      window.location.href = 'C-Position-Hold-Top2.html';
+    }
+    if (page_index =='C-Position-Hold-Top2.html'){
+
+      window.location.href = 'C-Position-Hold-Top3.html';
+    }
+    if (page_index =='C-Position-Hold-Top3.html'){
 
       window.location.href = 'Completion_CPHT_Page.html';
     }
-    if (page_index =='C-Position-Hold-Bottom.html'){
+    if (page_index =='C-Position-Hold-Bottom1.html'){
+
+      window.location.href = 'C-Position-Hold-Bottom2.html';
+    }
+    if (page_index =='C-Position-Hold-Bottom2.html'){
+
+      window.location.href = 'C-Position-Hold-Bottom3.html';
+    }
+    if (page_index =='C-Position-Hold-Bottom3.html'){
 
       window.location.href = 'Completion_CPHB_Page.html';
     }
-    if (page_index =='C-Position-Hold-Side.html'){
+    if (page_index =='C-Position-Hold-Side1.html'){
+
+      window.location.href = 'C-Position-Hold-Side2.html';
+    }
+    if (page_index =='C-Position-Hold-Side2.html'){
+
+      window.location.href = 'C-Position-Hold-Side3.html';
+    }
+    if (page_index =='C-Position-Hold-Side3.html'){
 
       window.location.href = 'Completion_CPHS_Page.html';
     }
