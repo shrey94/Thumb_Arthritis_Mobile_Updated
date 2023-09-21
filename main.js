@@ -6,12 +6,26 @@ var el = document.getElementById('counter');
 // var ispaused = false;
 
 function incrementSeconds() {
+  var page_name_array = ((window.location.href).split('/'));
+  var page_index = (page_name_array[page_name_array.length-1]);
   seconds += 1;
   el.innerText = "Reps: " + seconds + " /30";
   // console.log(seconds);
   if (seconds >29.5){
-    window.location.href = 'Completion_PFE_Page.html';
+    if(page_index=='Pointer_Finger_Exercise_Easy.html'){
+      window.location.href = 'Completion_PFE_Page.html';
+      clearInterval(timer);
+    }
+    if (page_index =='Pointer_Finger_Exercise_Difficult.html'){
+
+      window.location.href = 'Completion_PFE_Page.html';
+      clearInterval(timer);
+    }
+    else {
+    window.location.href = 'Completion_TEE_Page.html';
     clearInterval(timer);
+
+    }
   }
 }
 var timer = setInterval(incrementSeconds, 2400);

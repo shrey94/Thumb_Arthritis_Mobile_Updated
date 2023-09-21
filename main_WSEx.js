@@ -15,10 +15,10 @@ function incrementSecondsRev() {
       el.innerText =  "Reps: " + seconds_rev;
     }
 
-  else if(page_index =='Thumb_Extension_Exercise.html'){
-    el.innerText =  "Reps: " + seconds_rev;
+  // else if(page_index =='Thumb_Extension_Exercise.html'){
+  //   el.innerText =  "Reps: " + seconds_rev;
 
-  }
+  // }
   else{
     el.innerText =  "Timer: " + seconds_rev;
   }
@@ -31,14 +31,14 @@ function incrementSecondsRev() {
     // var page_name_array = ((window.location.href).split('/'));
     // var page_index = (page_name_array[page_name_array.length-1]);
     // console.log(page_index);
-    if (page_index =='Thumb_Extension_Exercise.html'){
+    // if (page_index =='Thumb_Extension_Exercise.html'){
 
-      window.location.href = 'Completion_TEE_Page.html';
-    }
-    if (page_index =='Pointer_Finger_Exercise_Difficult.html'){
+    //   window.location.href = 'Completion_TEE_Page.html';
+    // }
+    // if (page_index =='Pointer_Finger_Exercise_Difficult.html'){
 
-      window.location.href = 'Completion_PFE_Page.html';
-    }
+    //   window.location.href = 'Completion_PFE_Page.html';
+    // }
     if (page_index =='Wrist_Strengthening_Exercise_1.html'){
 
       window.location.href = 'Completion_WEx_1_Page.html';
