@@ -15,11 +15,11 @@ function incrementSecondsRev() {
     console.log(page_index);
     if (page_index =='C-Position-Hold-Easy1.html'){
 
-      window.location.href = 'C-Position-Hold-Easy2.html';
+      window.location.href = 'TimerPage_C_position_1_easy.html';
     }
     if (page_index =='C-Position-Hold-Easy2.html'){
 
-      window.location.href = 'C-Position-Hold-Easy3.html';
+      window.location.href = 'TimerPage_C_position_2_easy.html';
     }
     if (page_index =='C-Position-Hold-Easy3.html'){
 
@@ -27,11 +27,11 @@ function incrementSecondsRev() {
     }
     if (page_index =='C-Position-Hold-Top1.html'){
 
-      window.location.href = 'C-Position-Hold-Top2.html';
+      window.location.href = 'TimerPage_C_position_1_top.html';
     }
     if (page_index =='C-Position-Hold-Top2.html'){
 
-      window.location.href = 'C-Position-Hold-Top3.html';
+      window.location.href = 'TimerPage_C_position_2_top.html';
     }
     if (page_index =='C-Position-Hold-Top3.html'){
 
@@ -39,11 +39,11 @@ function incrementSecondsRev() {
     }
     if (page_index =='C-Position-Hold-Bottom1.html'){
 
-      window.location.href = 'C-Position-Hold-Bottom2.html';
+      window.location.href = 'TimerPage_C_position_1_bottom.html';
     }
     if (page_index =='C-Position-Hold-Bottom2.html'){
 
-      window.location.href = 'C-Position-Hold-Bottom3.html';
+      window.location.href = 'TimerPage_C_position_2_bottom.html';
     }
     if (page_index =='C-Position-Hold-Bottom3.html'){
 
@@ -51,11 +51,11 @@ function incrementSecondsRev() {
     }
     if (page_index =='C-Position-Hold-Side1.html'){
 
-      window.location.href = 'C-Position-Hold-Side2.html';
+      window.location.href = 'TimerPage_C_position_1_side.html';
     }
     if (page_index =='C-Position-Hold-Side2.html'){
 
-      window.location.href = 'C-Position-Hold-Side3.html';
+      window.location.href = 'TimerPage_C_position_2_side.html';
     }
     if (page_index =='C-Position-Hold-Side3.html'){
 

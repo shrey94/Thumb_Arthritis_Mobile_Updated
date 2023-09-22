@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer for C-position Hold Bottom 2</title>
+  <link rel="stylesheet" href="font-6/css/all.css">
+  
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="mystyle.css">
+  <!-- <script src="main.js"></script> -->
+  <!-- <script src="main.js"></script> -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+  </style>
+</head>
+<body onload="timer()">
+  <br>
+  <br>
+  <br>
+  <div id="safeTimer">
+    <h3 style='text-align: center'><b>Set 2: C-position Hold Bottom</b></h3>
+  <h2 style='text-align: center'><b>Next exercise in 5 seconds</b></h3>
+    <br>
+    <br>
+  <h3 style='text-align: center' id="safeTimerDisplay">00:5</h3>
+  </div>
+  <script type="text/javascript">
+    function timer(){
+    var sec = 5;
+    var timer = setInterval(function(){
+        document.getElementById('safeTimerDisplay').innerHTML='00:'+sec;
+        sec--;
+        if (sec < 0) {
+            clearInterval(timer);
+            window.location.href = 'C-Position-Hold-Bottom3.html'
+            // alert("Get ready for next exercise")
+
+        }
+    }, 1000);
+  }
+    
+  </script>
+</body>
+</html>
