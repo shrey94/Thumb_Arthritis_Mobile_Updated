@@ -8,12 +8,14 @@ var el = document.getElementById('counter');
 function incrementSeconds() {
   var page_name_array = ((window.location.href).split('/'));
   var page_index = (page_name_array[page_name_array.length-1]);
+  console.log(page_index);
   seconds += 1;
   el.innerText = "Reps: " + seconds + " /30";
   // console.log(seconds);
   if (seconds >29.5){
-    if(page_index=='Pointer_Finger_Exercise_Easy.html'){
+    if(page_index =='Pointer_Finger_Exercise_Easy.html'){
       window.location.href = 'Completion_PFE_Page.html';
+
       clearInterval(timer);
     }
     if (page_index =='Pointer_Finger_Exercise_Difficult.html'){
@@ -21,7 +23,7 @@ function incrementSeconds() {
       window.location.href = 'Completion_PFE_Page.html';
       clearInterval(timer);
     }
-    else {
+    if (page_index=='Thumb_Extension_Exercise.html') {
     window.location.href = 'Completion_TEE_Page.html';
     clearInterval(timer);
 
